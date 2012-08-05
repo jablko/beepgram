@@ -1,0 +1,13 @@
+api_version: 1
+application: beepgram
+runtime: python27
+threadsafe: false
+version: 1
+
+handlers:
+- login: admin
+  url: /_ah/mail/.+
+  script: beepgram.py
+
+inbound_services:
+- mail
